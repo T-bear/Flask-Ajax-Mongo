@@ -5,7 +5,7 @@ import random
 app = Flask(__name__)
 
 app.config['MONGO_DBNAME'] = 'python-test'
-app.config['MONGO_URI'] = 'mongodb://Vanhorn:mongodb123@ds123926.mlab.com:23926/python-testing'
+app.config['MONGO_URI'] = 'mongodb://<username>:<password>@ds123926.mlab.com:23926/python-testing'
 
 mongo = PyMongo(app)
 
