@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type=text/javascript src="{{url_for('static', filename='jquery-3.2.1.js') }}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='ajax.js') }}"></script>
+<title>Flask, PyMongo and Ajax</title>
+</head>
+<body>
+<div id="showresults">
+<ul>
+    {% for n in output %}
+    <li>{{n}}</li>
+    {% endfor %}
+</ul>
+</div>
+
+</body>
+</html>
